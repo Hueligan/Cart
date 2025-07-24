@@ -1,116 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hueligans Cart</title>
-  <script src="https://payhip.com/payhip.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Merriweather', serif;
-      margin: 40px;
-      background-color: #fff;
-      color: #111;
-    }
-    .back-button {
-      display: inline-block;
-      margin-bottom: 30px;
-      padding: 10px 20px;
-      border: 2px solid #111;
-      text-decoration: none;
-      color: #111;
-      border-radius: 6px;
-      transition: background 0.3s, color 0.3s;
-    }
-    .back-button:hover {
-      background: #111;
-      color: #fff;
-    }
-    .product {
-      border: 1px solid #eee;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-    }
-    .product img {
-      width: 120px;
-      height: auto;
-      border-radius: 8px;
-    }
-    .product-details {
-      flex-grow: 1;
-      min-width: 200px;
-    }
-    .buy-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 16px;
-      border: 2px solid #111 !important;
-      background-color: transparent !important;
-      color: #111 !important;
-      border-radius: 6px !important;
-      text-decoration: none !important;
-      font-family: 'Merriweather', serif !important;
-      font-size: 16px !important;
-      transition: background 0.3s, color 0.3s;
-    }
-    .buy-button:hover {
-      background-color: #111 !important;
-      color: #fff !important;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Hueligans Cart</title>
+    <script src="https://payhip.com/payhip.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 40px;
+            background-color: #fff;
+            color: #111;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid #111;
+            text-decoration: none;
+            color: #111;
+            border-radius: 6px;
+        }
+        .product {
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .product img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-details {
+            flex-grow: 1;
+        }
+        .buy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            border: 2px solid #111;
+            background-color: transparent;
+            color: #111;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <a href="https://www.hueligans.online" class="back-button">&larr; Back to Hueligans</a>
 
-<!-- Product 1 -->
-<div class="product">
-  <img src="images/city-hue.png" alt="City Hue | SB Vinyl">
-  <div class="product-details">
-    <h3>City Hue | SB Vinyl</h3>
-    <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
-    <p><strong>$5.00</strong></p>
-    <a href="https://payhip.com/b/2HLAY" class="payhip-add-to-cart-button buy-button" data-product="2HLAY">Add to Cart</a>
-  </div>
-</div>
+    <div class="product">
+        <img src="https://hueligan.github.io/Cart/images/h-summer-25.png" alt="City Hue | SB Vinyl">
+        <div class="product-details">
+            <h3>City Hue | SB Vinyl</h3>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p><strong>$5.00</strong></p>
+            <a href="https://payhip.com/b/2HLAY" class="payhip-add-to-cart-button buy-button" data-product="2HLAY">Add to Cart</a>
+        </div>
+    </div>
 
-<!-- Product 2 -->
-<div class="product">
-  <img src="images/halftone-yellow.png" alt="Halftone Yellow | SB Vinyl">
-  <div class="product-details">
-    <h3>Halftone Yellow | SB Vinyl</h3>
-    <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
-    <p><strong>$5.00</strong></p>
-    <a href="https://payhip.com/b/w9mbo" class="payhip-add-to-cart-button buy-button" data-product="w9mbo">Add to Cart</a>
-  </div>
-</div>
+    <div class="product">
+        <img src="https://hueligan.github.io/Cart/images/p-summer-25.png" alt="Halftone Yellow | SB Vinyl">
+        <div class="product-details">
+            <h3>Halftone Yellow | SB Vinyl</h3>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p><strong>$5.00</strong></p>
+            <a href="https://payhip.com/b/w9mbo" class="payhip-add-to-cart-button buy-button" data-product="w9mbo">Add to Cart</a>
+        </div>
+    </div>
 
-<!-- Product 3 -->
-<div class="product">
-  <img src="images/cement-red.png" alt="Cement Red | SB Vinyl">
-  <div class="product-details">
-    <h3>Cement Red | SB Vinyl</h3>
-    <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
-    <p><strong>$5.00</strong></p>
-    <a href="https://payhip.com/b/YpWx5" class="payhip-add-to-cart-button buy-button" data-product="YpWx5">Add to Cart</a>
-  </div>
-</div>
+    <div class="product">
+        <img src="https://hueligan.github.io/Cart/images/r-summer-25.png" alt="Cement Red | SB Vinyl">
+        <div class="product-details">
+            <h3>Cement Red | SB Vinyl</h3>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p><strong>$5.00</strong></p>
+            <a href="https://payhip.com/b/YpWx5" class="payhip-add-to-cart-button buy-button" data-product="YpWx5">Add to Cart</a>
+        </div>
+    </div>
 
-<!-- Product 4 -->
-<div class="product">
-  <img src="images/wave-town-purple.png" alt="Wave Town Purple | SB Vinyl">
-  <div class="product-details">
-    <h3>Wave Town Purple | SB Vinyl</h3>
-    <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
-    <p><strong>$5.00</strong></p>
-    <a href="https://payhip.com/b/nk6Wc" class="payhip-add-to-cart-button buy-button" data-product="nk6Wc">Add to Cart</a>
-  </div>
-</div>
+    <div class="product">
+        <img src="https://hueligan.github.io/Cart/images/y-summer-25.png" alt="Wave Town Purple | SB Vinyl">
+        <div class="product-details">
+            <h3>Wave Town Purple | SB Vinyl</h3>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p><strong>$5.00</strong></p>
+            <a href="https://payhip.com/b/nk6Wc" class="payhip-add-to-cart-button buy-button" data-product="nk6Wc">Add to Cart</a>
+        </div>
+    </div>
 
 </body>
 </html>
