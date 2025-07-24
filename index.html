@@ -8,9 +8,14 @@
     <style>
         body {
             font-family: 'Merriweather', serif;
-            margin: 40px;
-            background-color: #fff;
+            margin: 0;
+            background-color: #f8f8f8;
             color: #111;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 40px 20px;
         }
         .back-button {
             display: inline-block;
@@ -22,6 +27,7 @@
             border-radius: 6px;
         }
         .product {
+            background: #fff;
             border: 1px solid #eee;
             padding: 20px;
             margin-bottom: 20px;
@@ -29,6 +35,7 @@
             display: flex;
             gap: 20px;
             align-items: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
         }
         .product img {
             width: 120px;
@@ -37,6 +44,9 @@
         }
         .product-details {
             flex-grow: 1;
+        }
+        .product-details h3 {
+            margin-top: 0;
         }
         .buy-button {
             display: inline-block;
@@ -47,17 +57,34 @@
             color: #111;
             border-radius: 6px;
             text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+        .buy-button:hover {
+            background-color: #111;
+            color: #fff;
+        }
+        @media (max-width: 600px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .product img {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 15px;
+            }
         }
     </style>
 </head>
 <body>
-<a href="https://www.hueligans.online" class="back-button">&larr; Back to Hueligans</a>
+<div class="container">
+    <a href="https://www.hueligans.online" class="back-button">&larr; Back to Hueligans</a>
 
     <div class="product">
         <img src="https://hueligan.github.io/Cart/images/h-summer-25.png" alt="City Hue | SB Vinyl">
         <div class="product-details">
             <h3>City Hue | SB Vinyl</h3>
-            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6" x 3" format is perfect for deck art, with a smooth, low-profile finish.</p>
             <p><strong>$5.00</strong></p>
             <a href="https://payhip.com/b/2HLAY" class="payhip-add-to-cart-button buy-button" data-product="2HLAY">Add to Cart</a>
         </div>
@@ -67,7 +94,7 @@
         <img src="https://hueligan.github.io/Cart/images/p-summer-25.png" alt="Halftone Yellow | SB Vinyl">
         <div class="product-details">
             <h3>Halftone Yellow | SB Vinyl</h3>
-            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6" x 3" format is perfect for deck art, with a smooth, low-profile finish.</p>
             <p><strong>$5.00</strong></p>
             <a href="https://payhip.com/b/w9mbo" class="payhip-add-to-cart-button buy-button" data-product="w9mbo">Add to Cart</a>
         </div>
@@ -77,7 +104,7 @@
         <img src="https://hueligan.github.io/Cart/images/r-summer-25.png" alt="Cement Red | SB Vinyl">
         <div class="product-details">
             <h3>Cement Red | SB Vinyl</h3>
-            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6" x 3" format is perfect for deck art, with a smooth, low-profile finish.</p>
             <p><strong>$5.00</strong></p>
             <a href="https://payhip.com/b/YpWx5" class="payhip-add-to-cart-button buy-button" data-product="YpWx5">Add to Cart</a>
         </div>
@@ -87,11 +114,11 @@
         <img src="https://hueligan.github.io/Cart/images/y-summer-25.png" alt="Wave Town Purple | SB Vinyl">
         <div class="product-details">
             <h3>Wave Town Purple | SB Vinyl</h3>
-            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6&quot; x 3&quot; format is perfect for deck art, with a smooth, low-profile finish.</p>
+            <p>SB Vinyls are premium transparent decals built for your board—waterproof, fade-resistant, and printed for sharp color and true white that lasts. The 6" x 3" format is perfect for deck art, with a smooth, low-profile finish.</p>
             <p><strong>$5.00</strong></p>
             <a href="https://payhip.com/b/nk6Wc" class="payhip-add-to-cart-button buy-button" data-product="nk6Wc">Add to Cart</a>
         </div>
     </div>
-
+</div>
 </body>
 </html>
